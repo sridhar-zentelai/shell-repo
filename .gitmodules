@@ -1,0 +1,6 @@
+[submodule "admin-repo"]
+	path = admin-repo
+	url = https://github.com/sridhar-zentelai/admin-repo.git
+[submodule "cms-repo"]
+	path = cms-repo
+	url = https://github.com/sridhar-zentelai/cms-repo.git
