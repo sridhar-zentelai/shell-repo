@@ -1,34 +1,3 @@
-// const { execSync } = require("child_process");
-// const fs = require("fs-extra");
-// const path = require("path");
-
-// async function fetchRepo(name, repoUrl) {
-//   const tmpDir = `/tmp/${name}`;
-//   const destDir = path.join(__dirname, "app", name);
-
-//   // Clean old content
-//   await fs.remove(destDir);
-
-//   console.log(`📥 Cloning ${name} from ${repoUrl}`);
-//   execSync(`git clone --depth 1 ${repoUrl} ${tmpDir}`, { stdio: "inherit" });
-
-//   console.log(`📂 Copying ${name}/app into shell/app/${name}`);
-//   await fs.copy(path.join(tmpDir, "app"), destDir);
-// }
-
-// (async () => {
-//   try {
-//     await fetchRepo(
-//       "admin",
-//       "https://github.com/sridhar-zentelai/admin-repo.git"
-//     );
-//     await fetchRepo("cms", "https://github.com/sridhar-zentelai/cms-repo.git");
-//     console.log("✅ Admin and CMS fetched into shell-app/app/");
-//   } catch (err) {
-//     console.error(err);
-//     process.exit(1);
-//   }
-// })();
 const { execSync } = require("child_process");
 const fs = require("fs-extra");
 const path = require("path");
